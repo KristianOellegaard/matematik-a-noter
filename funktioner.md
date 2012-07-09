@@ -23,3 +23,4 @@ Formel: $$y = ba^x$$
 $$y = bx^a$$
 
 $$(1+rx)^a = (1+ry)$$
+
