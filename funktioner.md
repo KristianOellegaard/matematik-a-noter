@@ -29,6 +29,23 @@ $$ {24 \over 3} = {a^5 \over a^2} $$
 
 $$ a = (\sqrt[5-2] {24 \over 3}) $$
 
+#### e^x
+Formel $$ y = e^x $$
+
+Bevis:
+
+$$ {{\Delta y} \over {\Delta x}} = {{e^{x+ \Delta x} - e^x} \over \Delta x} = {{e^x * e^{\Delta x} - e^x} \over {\Delta x}} $$
+$$ e^x {{e^{\Delta x} -1 } \over {\Delta x}} = e^x {{e^{0 + \Delta x} e^0 } \over {\Delta x}}  $$
+
+Vi ved:
+$$ {{e^{0 + \Delta x} e^0 } \over {\Delta x}} = 1 $$
+
+Derfor er $$ (e^x)' = e^x $$
+
+Derudover:
+
+$$ e^{lna*x} = (e^{lna})^x = a^x $$
+
 #### Regning med procent
 $$ y=b(1+r)^x $$
 

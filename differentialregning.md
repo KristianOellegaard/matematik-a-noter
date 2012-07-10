@@ -18,13 +18,24 @@ $$ {\Delta S \over \Delta t} \to_{\Delta t \to 0} S'(t) = {ds \over dt} = {dx \o
 
 $$ {\Delta f \over \Delta x} \to_{\Delta x \to 0} f'(x) = {df \over dx} $$
 
-$$ {{f(x) + \Delta x}) = f(x)} \over \Delta x} $$
+$$ {{f(x) + \Delta x}) = f(x)} \over {\Delta x} $$
 
 Eksempel:
 
 $$ f(x) = x^2 $$
 
-$$ f'(x) = {x + \Deltax}^2 - x^2} \over {\Delta x} = {x^2 + (\Delta x^2) +2x * \Delta x - x^2} \over \Delta X} $$
+$$ f'(x) = {
+	{{x + \Delta x}^2 - x^2}
+	\over
+	{\Delta x}
+}
+=
+{
+	{x^2 + (\Delta x^2) +2x * \Delta x - x^2}
+	\over
+	{\Delta x}
+}
+$$
 
 $$ \Delta x (\Delta x + 2x) \over \Delta x $$
 
@@ -85,3 +96,19 @@ $$ h(x) = f(g(x)) $$
 f(x) er ydre funktion g(x) er indre funktion
 $$ hʼ(x) = fʼ(g(x)) * gʼ(x) $$
 
+Bevis:
+
+$$ y = f(g(x)) $$
+
+$$ test = { {f(g(x + \Delta x )) - f(g(x))} \over {\Delta x}} $$
+
+$$ {{f(g(x) + \Delta g)} - f(g(x))} \over {\Delta x} $$
+
+$$ fʼ(g(x)) * gʼ(x) $$
+
+#### Differentiering af logaritmefunktionen ln
+
+$$ {{ln(x + \Delta x) - lnx} \over {\Delta x}} = {{ln({{x + \Delta x} \over {x}})} \over {\Delta x}} = {{ln({x \over x} + {\Delta x \over x}) - ln1} \over {\Delta x}} $$
+
+Divider delta x med x og gang det med x, for at matche det i overdelen af ligningen
+$$ {{ln({x \over x} + {\Delta x \over x}) - ln1} \over {\Delta x \over x } * x } = {1 \over x}$$
