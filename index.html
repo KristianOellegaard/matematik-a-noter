@@ -10,27 +10,141 @@
 <body>
 <div id="TOC">
 <ul>
-<li><a href="#funktioner">Funktioner</a><ul>
-<li><a href="#lineære-funktioner">Lineære funktioner</a></li>
-<li><a href="#exponentielle-funktioner">Exponentielle funktioner</a></li>
-<li><a href="#potensfunktioner">Potensfunktioner</a></li>
+<li><a href="#differentialregning">Differentialregning</a><ul>
+<li><a href="#grænseværdi">Grænseværdi</a></li>
+<li><a href="#tiddistance">Tid/distance</a><ul>
+<li><a href="#regler-for-differentialkvotient-brug-formlerne-for">Regler for differentialkvotient brug formlerne for</a><ul>
+<li><a href="#differentiering-af-potensfunktion">Differentiering af potensfunktion</a></li>
+<li><a href="#differentiering-af-ex">Differentiering af e^x</a></li>
+<li><a href="#differentiering-af-konstanter">Differentiering af konstanter</a></li>
+<li><a href="#differentiering-af-resultatet-af-to-funktioner">Differentiering af resultatet af to funktioner</a></li>
+<li><a href="#differentiering-af-produktet-af-to-funktioner">Differentiering af produktet af to funktioner</a></li>
+<li><a href="#differentiering-af-divion-af-to-funktioner">Differentiering af divion af to funktioner</a></li>
+<li><a href="#differentering-af-sammensatte-funktioner">Differentering af sammensatte funktioner</a></li>
+<li><a href="#differentiering-af-logaritmefunktionen-ln">Differentiering af logaritmefunktionen ln</a></li>
 </ul></li>
-<li><a href="#tal">Tal</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#funktioner">Funktioner</a><ul>
+<li><a href="#definitioner-m.v.">Definitioner m.v.</a><ul>
+<li><a href="#lineære-funktioner">Lineære funktioner</a></li>
+<li><a href="#exponentielle-funktioner">Exponentielle funktioner</a><ul>
+<li><a href="#ex">e^x</a></li>
+<li><a href="#regning-med-procent">Regning med procent</a></li>
+<li><a href="#fordoblingstidhalveringstid">Fordoblingstid/Halveringstid</a></li>
+</ul></li>
+<li><a href="#potensfunktioner">Potensfunktioner</a></li>
+<li><a href="#logaritmer">Logaritmer</a></li>
+</ul></li>
+<li><a href="#sammensatte-funktioner">Sammensatte funktioner</a></li>
+</ul></li>
 </ul>
 </div>
+<h1 id="differentialregning"><a href="#TOC">Differentialregning</a></h1>
+<h2 id="grænseværdi"><a href="#TOC">Grænseværdi</a></h2>
+<p>\[ {1 \over n} \to_{n \to \infty} 0 \]</p>
+<p>Bestemmelse af e</p>
+<p>\[ (1 + {1 \over n}^n) \to_{n \to \infty} e \]</p>
+<h2 id="tiddistance"><a href="#TOC">Tid/distance</a></h2>
+<p>Tangenten på en funktion der beskriver tid/distance, kan bruges til at finde hastigheden i præcis det punkt, hvor tangenten ligger.</p>
+<p>v= hastighed \[ {\Delta S \over \Delta t} \to_{\Delta t \to 0} S&#39;(t) = V(t) \]</p>
+<p>\[ {\Delta S \over \Delta t} \to_{\Delta t \to 0} S&#39;(t) = {ds \over dt} = {dx \over dy}\]</p>
+<p>\[ {\Delta f \over \Delta x} \to_{\Delta x \to 0} f&#39;(x) = {df \over dx} \]</p>
+<p>\[ {{f(x) + \Delta x}) = f(x)} \over {\Delta x} \]</p>
+<p>Eksempel:</p>
+<p>\[ f(x) = x^2 \]</p>
+<p>\[ f&#39;(x) = {
+    {{x + \Delta x}^2 - x^2}
+    \over
+    {\Delta x}
+}
+=
+{
+    {x^2 + (\Delta x^2) +2x * \Delta x - x^2}
+    \over
+    {\Delta x}
+}
+\]</p>
+<p>\[ \Delta x (\Delta x + 2x) \over \Delta x \]</p>
+<p>\[ (\Delta x + 2x)\]</p>
+<p>\[ (\Delta x + 2 \to_{\Delta x \to 0} 2x) \]</p>
+<p>Eksempel:</p>
+<p>\[ f(x) = {1 \over x} \]</p>
+<p>\[ f&#39;(x) = {{f(x+ \Delta x) - f(x)} \over { \Delta x}} = {{{x - (x+ \Delta x)} \over {(x+ \Delta x)*x}} \over \Delta x} = {{{- \Delta x} \over (x + \Delta x) * x} \over \Delta x} \]</p>
+<h3 id="regler-for-differentialkvotient-brug-formlerne-for"><a href="#TOC">Regler for differentialkvotient brug formlerne for</a></h3>
+<h4 id="differentiering-af-potensfunktion"><a href="#TOC">Differentiering af potensfunktion</a></h4>
+<p>\[ f(x) = a^x \]</p>
+<p>\[ fʼ(x) = ln(a)*a^x \]</p>
+<h4 id="differentiering-af-ex"><a href="#TOC">Differentiering af e^x</a></h4>
+<p>\[ f(x) = e^x \]</p>
+<p>\[ fʼ(x) = e^x \]</p>
+<h4 id="differentiering-af-konstanter"><a href="#TOC">Differentiering af konstanter</a></h4>
+<p>\[ h(x) = k*f(x) \]</p>
+<p>\[ hʼ(x) = k*fʼ(x) \]</p>
+<h4 id="differentiering-af-resultatet-af-to-funktioner"><a href="#TOC">Differentiering af resultatet af to funktioner</a></h4>
+<p>\[ H(x) = f(x) ± g(x) \]</p>
+<p>\[ hʼ(x) = fʼ(x) ± gʼ(x) \]</p>
+<h4 id="differentiering-af-produktet-af-to-funktioner"><a href="#TOC">Differentiering af produktet af to funktioner</a></h4>
+<p>\[ h(x) = f(x) * g(x) \]</p>
+<p>\[ hʼ(x) = fʼ(x) * g(x) + f(x) * gʼ(x) \]</p>
+<h4 id="differentiering-af-divion-af-to-funktioner"><a href="#TOC">Differentiering af divion af to funktioner</a></h4>
+<p>\[ h(x) = f(x)/g(x) \]</p>
+<p>\[ g(x) ≠ 0 \]</p>
+<p>\[ hʼ(x) = (fʼ(x)*g(x)-f(x)*gʼ(x))/g(x)^2) \]</p>
+<h4 id="differentering-af-sammensatte-funktioner"><a href="#TOC">Differentering af sammensatte funktioner</a></h4>
+<p>sammensat funktion = composite function se 6.8, chain rule i “Essential Mathematic for Economic Analysis” side 187 \[ h(x) = f(g(x)) \] f(x) er ydre funktion g(x) er indre funktion \[ hʼ(x) = fʼ(g(x)) * gʼ(x) \]</p>
+<p>Bevis:</p>
+<p>\[ y = f(g(x)) \]</p>
+<p>\[ test = { {f(g(x + \Delta x )) - f(g(x))} \over {\Delta x}} \]</p>
+<p>\[ {{f(g(x) + \Delta g)} - f(g(x))} \over {\Delta x} \]</p>
+<p>\[ fʼ(g(x)) * gʼ(x) \]</p>
+<h4 id="differentiering-af-logaritmefunktionen-ln"><a href="#TOC">Differentiering af logaritmefunktionen ln</a></h4>
+<p>\[ {{ln(x + \Delta x) - lnx} \over {\Delta x}} = {{ln({{x + \Delta x} \over {x}})} \over {\Delta x}} = {{ln({x \over x} + {\Delta x \over x}) - ln1} \over {\Delta x}} \]</p>
+<p>Divider delta x med x og gang det med x, for at matche det i overdelen af ligningen \[ {{ln({x \over x} + {\Delta x \over x}) - ln1} \over {\Delta x \over x } * x } = {1 \over x}\]</p>
 <h1 id="funktioner"><a href="#TOC">Funktioner</a></h1>
-<h2 id="lineære-funktioner"><a href="#TOC">Lineære funktioner</a></h2>
-<p>\[y = ax+b\]</p>
+<h2 id="definitioner-m.v."><a href="#TOC">Definitioner m.v.</a></h2>
+<h3 id="lineære-funktioner"><a href="#TOC">Lineære funktioner</a></h3>
+<p>Formel: \[y = ax+b\]</p>
 <p>\[a = { \Delta y \over \Delta x }\]</p>
 <p>Ligefrem proportionalitet \[y = kx\]</p>
 <p>Omvendt proportionalitet \[y ={k \over x}\]</p>
 <p>e.g. cykelpumpe \[p * v = k\]</p>
-<h2 id="exponentielle-funktioner"><a href="#TOC">Exponentielle funktioner</a></h2>
+<h3 id="exponentielle-funktioner"><a href="#TOC">Exponentielle funktioner</a></h3>
 <p>Formel: \[y = ba^x\]</p>
-<h2 id="potensfunktioner"><a href="#TOC">Potensfunktioner</a></h2>
-<p>\[y = bx^a\]</p>
+<p>Hvis man kender to punkter, eks. (3, 2), (24,5)</p>
+<p>\[ 24 = ( b * a^5) \] \[ 3 = ( b * a^2) \] \[ {24 \over 3} = {b\*a^5 \over b\*a^2} \]</p>
+<p>\[ {24 \over 3} = {a^5 \over a^2} \]</p>
+<p>\[ a = (\sqrt[5-2] {24 \over 3}) \]</p>
+<h4 id="ex"><a href="#TOC">e^x</a></h4>
+<p>Formel \[ y = e^x \]</p>
+<p>Bevis:</p>
+<p>\[ {{\Delta y} \over {\Delta x}} = {{e^{x+ \Delta x} - e^x} \over \Delta x} = {{e^x * e^{\Delta x} - e^x} \over {\Delta x}} \] \[ e^x {{e^{\Delta x} -1 } \over {\Delta x}} = e^x {{e^{0 + \Delta x} e^0 } \over {\Delta x}}  \]</p>
+<p>Vi ved: \[ {{e^{0 + \Delta x} e^0 } \over {\Delta x}} = 1 \]</p>
+<p>Derfor er \[ (e^x)&#39; = e^x \]</p>
+<p>Derudover:</p>
+<p>\[ e^{lna*x} = (e^{lna})^x = a^x \]</p>
+<h4 id="regning-med-procent"><a href="#TOC">Regning med procent</a></h4>
+<p>\[ y=b(1+r)^x \]</p>
+<h4 id="fordoblingstidhalveringstid"><a href="#TOC">Fordoblingstid/Halveringstid</a></h4>
+<p>\[ y = b*2^{x \over T_2} \]</p>
+<h3 id="potensfunktioner"><a href="#TOC">Potensfunktioner</a></h3>
+<p>Formel: \[y = bx^a\]</p>
 <p>\[(1+rx)^a = (1+ry)\]</p>
-<h1 id="tal"><a href="#TOC">Tal</a></h1>
+<h3 id="logaritmer"><a href="#TOC">Logaritmer</a></h3>
+<p>ln != log</p>
+<p>log() bruger 10-tals-systemet \[ y = a*ln(x) \]</p>
+<p>\[ ln2 = ln(2) \approx 0,69314 \] \[ ln3 = ln(3) \approx 1,09861 \] \[ ln6 = ln(6) \approx 1,79176 \]</p>
+<p>eks.</p>
+<p>\[ f(x) = e^x \] \[ f^{-1}(x) = ln(x) \]</p>
+<p>\[ ln(x) = 0 -&gt; e^0 = 1 \] (man kan ligge resultaterne sammen og få produktet af dem)</p>
+<p>bevis \[ e^{ln(a*b)} = e^{lna+lnb} \]</p>
+<p>\[ e^{ln{a \over b}} = e^{lna - lnb} \]</p>
+<p>\[ a*b = e^{lna} * e^{lnb} \]</p>
+<h2 id="sammensatte-funktioner"><a href="#TOC">Sammensatte funktioner</a></h2>
+<p>Det kan ofte være nyttigt at kombinere flere funktioner, f.eks.:</p>
+<p>\[ f(x) = x^2 \] \[ g(x) = \sqrt x - 23 \]</p>
+<p>De kan herefter kombineres, f.eks.:</p>
+<p>\[ f(g(x)) = (\sqrt x - 23)^2 \] eller \[ g(f(x)) = \sqrt ( x^2 ) - 23 \] # Tal</p>
 <p>N = Naturlige tal {1, 2, 3, …}</p>
 <p>N0 = Naturlige tal, samt 0 {0, 1, 2, 3, …}</p>
 <p>Z = Hele tal {…, -3, -2, -1, 0, 1, …}</p>
