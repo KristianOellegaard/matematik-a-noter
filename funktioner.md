@@ -94,3 +94,4 @@ De kan herefter kombineres, f.eks.:
 $$ f(g(x)) = (\sqrt x - 23)^2 $$
 eller
 $$ g(f(x)) = \sqrt ( x^2 ) - 23 $$
+
