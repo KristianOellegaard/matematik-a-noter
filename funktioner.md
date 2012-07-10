@@ -19,11 +19,52 @@ $$p * v = k$$
 ### Exponentielle funktioner
 Formel: $$y = ba^x$$
 
+Hvis man kender to punkter, eks. (3, 2), (24,5)
+
+$$ 24 = ( b * a^5) $$
+$$ 3 = ( b * a^2) $$
+$$ {24 \over 3} = {b\*a^5 \over b\*a^2} $$
+
+$$ {24 \over 3} = {a^5 \over a^2} $$
+
+$$ a = (\sqrt[5-2] {24 \over 3}) $$
+
+#### Regning med procent
+$$ y=b(1+r)^x $$
+
+#### Fordoblingstid/Halveringstid
+$$ y = b*2^{x \over T_2} $$
+
 
 ### Potensfunktioner
 Formel: $$y = bx^a$$
 
 $$(1+rx)^a = (1+ry)$$
+
+### Logaritmer
+ln != log
+
+log() bruger 10-tals-systemet
+$$ y = a*ln(x) $$
+
+$$ ln2 = ln(2) \approx 0,69314 $$
+$$ ln3 = ln(3) \approx 1,09861 $$
+$$ ln6 = ln(6) \approx 1,79176 $$
+
+eks.
+
+$$ f(x) = e^x $$
+$$ f^{-1}(x) = ln(x) $$
+
+$$ ln(x) = 0 -> e^0 = 1 $$
+(man kan ligge resultaterne sammen og få produktet af dem)
+
+bevis
+$$ e^{ln(a*b)} = e^{lna+lnb} $$
+
+$$ e^{ln{a \over b}} = e^{lna - lnb} $$
+
+$$ a*b = e^{lna} * e^{lnb} $$
 
 ## Sammensatte funktioner
 Det kan ofte være nyttigt at kombinere flere funktioner, f.eks.:
