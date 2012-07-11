@@ -12,19 +12,22 @@
 <ul>
 <li><a href="#differentialregning">Differentialregning</a><ul>
 <li><a href="#grænseværdi">Grænseværdi</a></li>
-<li><a href="#tiddistance">Tid/distance</a><ul>
-<li><a href="#regler-for-differentialkvotient-brug-formlerne-for">Regler for differentialkvotient brug formlerne for</a><ul>
+<li><a href="#tiddistance">Tid/distance</a></li>
+<li><a href="#regler-og-eksempler">Regler og eksempler</a><ul>
 <li><a href="#differentiering-af-potensfunktion">Differentiering af potensfunktion</a></li>
 <li><a href="#differentiering-af-ex">Differentiering af e^x</a></li>
+<li><a href="#differentering-af-xa">Differentering af x^a</a></li>
 <li><a href="#differentiering-af-konstanter">Differentiering af konstanter</a></li>
 <li><a href="#differentiering-af-resultatet-af-to-funktioner">Differentiering af resultatet af to funktioner</a></li>
-<li><a href="#differentiering-af-produktet-af-to-funktioner">Differentiering af produktet af to funktioner</a></li>
+<li><a href="#differentiering-af-produktet-af-to-funktioner">Differentiering af produktet af to funktioner</a><ul>
+<li><a href="#produktreglen">Produktreglen</a></li>
+</ul></li>
 <li><a href="#differentiering-af-divion-af-to-funktioner">Differentiering af divion af to funktioner</a></li>
 <li><a href="#differentering-af-sammensatte-funktioner">Differentering af sammensatte funktioner</a></li>
 <li><a href="#differentiering-af-logaritmefunktionen-ln">Differentiering af logaritmefunktionen ln</a></li>
 </ul></li>
 </ul></li>
-</ul></li>
+<li><a href="#tangentligning">Tangentligning</a></li>
 <li><a href="#funktioner">Funktioner</a><ul>
 <li><a href="#definitioner-m.v.">Definitioner m.v.</a><ul>
 <li><a href="#lineære-funktioner">Lineære funktioner</a></li>
@@ -72,36 +75,52 @@
 <p>Eksempel:</p>
 <p>\[ f(x) = {1 \over x} \]</p>
 <p>\[ f&#39;(x) = {{f(x+ \Delta x) - f(x)} \over { \Delta x}} = {{{x - (x+ \Delta x)} \over {(x+ \Delta x)*x}} \over \Delta x} = {{{- \Delta x} \over (x + \Delta x) * x} \over \Delta x} \]</p>
-<h3 id="regler-for-differentialkvotient-brug-formlerne-for"><a href="#TOC">Regler for differentialkvotient brug formlerne for</a></h3>
-<h4 id="differentiering-af-potensfunktion"><a href="#TOC">Differentiering af potensfunktion</a></h4>
+<h2 id="regler-og-eksempler"><a href="#TOC">Regler og eksempler</a></h2>
+<h3 id="differentiering-af-potensfunktion"><a href="#TOC">Differentiering af potensfunktion</a></h3>
 <p>\[ f(x) = a^x \]</p>
-<p>\[ fʼ(x) = ln(a)*a^x \]</p>
-<h4 id="differentiering-af-ex"><a href="#TOC">Differentiering af e^x</a></h4>
+<p>\[ f&#39;(x) = ln(a)*a^x \]</p>
+<h3 id="differentiering-af-ex"><a href="#TOC">Differentiering af e^x</a></h3>
 <p>\[ f(x) = e^x \]</p>
-<p>\[ fʼ(x) = e^x \]</p>
-<h4 id="differentiering-af-konstanter"><a href="#TOC">Differentiering af konstanter</a></h4>
+<p>\[ f&#39;(x) = e^x \]</p>
+<h3 id="differentering-af-xa"><a href="#TOC">Differentering af x^a</a></h3>
+<p>\[ (x^a)&#39; = ax^{a-1} \]</p>
+<p>\[ e^{lnx} = x \]</p>
+<p>\[ x^a = (e^{lnx})^a = e^{a*lnx} \]</p>
+<p>\[ (x^a)&#39; = (e^{a\*lnx}) = e^{a\*lnx} * a {1 \over x} = ax^a*{1 \over x^1} = ax^{a-1} \]</p>
+<h3 id="differentiering-af-konstanter"><a href="#TOC">Differentiering af konstanter</a></h3>
 <p>\[ h(x) = k*f(x) \]</p>
-<p>\[ hʼ(x) = k*fʼ(x) \]</p>
-<h4 id="differentiering-af-resultatet-af-to-funktioner"><a href="#TOC">Differentiering af resultatet af to funktioner</a></h4>
-<p>\[ H(x) = f(x) ± g(x) \]</p>
-<p>\[ hʼ(x) = fʼ(x) ± gʼ(x) \]</p>
-<h4 id="differentiering-af-produktet-af-to-funktioner"><a href="#TOC">Differentiering af produktet af to funktioner</a></h4>
+<p>\[ h&#39;(x) = k*f&#39;(x) \]</p>
+<h3 id="differentiering-af-resultatet-af-to-funktioner"><a href="#TOC">Differentiering af resultatet af to funktioner</a></h3>
+<p>\[ H(x) = f(x) \pm g(x) \]</p>
+<p>\[ h&#39;(x) = f&#39;(x) \pm g&#39;(x) \]</p>
+<h3 id="differentiering-af-produktet-af-to-funktioner"><a href="#TOC">Differentiering af produktet af to funktioner</a></h3>
 <p>\[ h(x) = f(x) * g(x) \]</p>
-<p>\[ hʼ(x) = fʼ(x) * g(x) + f(x) * gʼ(x) \]</p>
-<h4 id="differentiering-af-divion-af-to-funktioner"><a href="#TOC">Differentiering af divion af to funktioner</a></h4>
+<p>\[ h&#39;(x) = f&#39;(x) * g(x) + f(x) * g&#39;(x) \]</p>
+<h4 id="produktreglen"><a href="#TOC">Produktreglen</a></h4>
+<p>Bevis for at produktreglens funktion er kontinuer</p>
+<p>\[ \Delta f = f(x + \Delta x) - f(x) \]</p>
+<p>\[ \Delta f = {{\Delta f} \over {\Delta x}} * \Delta x \]</p>
+<p>\[ f&#39;(x) * 0 = 0 \]</p>
+<h3 id="differentiering-af-divion-af-to-funktioner"><a href="#TOC">Differentiering af divion af to funktioner</a></h3>
 <p>\[ h(x) = f(x)/g(x) \]</p>
-<p>\[ g(x) ≠ 0 \]</p>
-<p>\[ hʼ(x) = (fʼ(x)*g(x)-f(x)*gʼ(x))/g(x)^2) \]</p>
-<h4 id="differentering-af-sammensatte-funktioner"><a href="#TOC">Differentering af sammensatte funktioner</a></h4>
-<p>sammensat funktion = composite function se 6.8, chain rule i “Essential Mathematic for Economic Analysis” side 187 \[ h(x) = f(g(x)) \] f(x) er ydre funktion g(x) er indre funktion \[ hʼ(x) = fʼ(g(x)) * gʼ(x) \]</p>
+<p>\[ g(x) \neq 0 \]</p>
+<p>\[ h&#39;(x) = (f&#39;(x)*g(x)-f(x)*g&#39;(x))/g(x)^2) \]</p>
+<h3 id="differentering-af-sammensatte-funktioner"><a href="#TOC">Differentering af sammensatte funktioner</a></h3>
+<p>sammensat funktion = composite function se 6.8, chain rule i “Essential Mathematic for Economic Analysis” side 187 \[ h(x) = f(g(x)) \] f(x) er ydre funktion g(x) er indre funktion \[ h&#39;(x) = f&#39;(g(x)) * g&#39;(x) \]</p>
 <p>Bevis:</p>
 <p>\[ y = f(g(x)) \]</p>
 <p>\[ test = { {f(g(x + \Delta x )) - f(g(x))} \over {\Delta x}} \]</p>
 <p>\[ {{f(g(x) + \Delta g)} - f(g(x))} \over {\Delta x} \]</p>
-<p>\[ fʼ(g(x)) * gʼ(x) \]</p>
-<h4 id="differentiering-af-logaritmefunktionen-ln"><a href="#TOC">Differentiering af logaritmefunktionen ln</a></h4>
+<p>\[ f&#39;(g(x)) * g&#39;(x) \]</p>
+<h3 id="differentiering-af-logaritmefunktionen-ln"><a href="#TOC">Differentiering af logaritmefunktionen ln</a></h3>
 <p>\[ {{ln(x + \Delta x) - lnx} \over {\Delta x}} = {{ln({{x + \Delta x} \over {x}})} \over {\Delta x}} = {{ln({x \over x} + {\Delta x \over x}) - ln1} \over {\Delta x}} \]</p>
 <p>Divider delta x med x og gang det med x, for at matche det i overdelen af ligningen \[ {{ln({x \over x} + {\Delta x \over x}) - ln1} \over {\Delta x \over x } * x } = {1 \over x}\]</p>
+<h1 id="tangentligning"><a href="#TOC">Tangentligning</a></h1>
+<p>Eks.:</p>
+<p>\[ y= ax+b \]</p>
+<p>Givet punkterne (1,1) og funktionen x^2 \[ y = f&#39;(x) + b \] \[ f&#39;(x_0) = {{y-f(x_0)} \over {x-x_0}} \] \[ f(x) = x^2 \] \[ t(x) = 2x+b \]</p>
+<p>b kan herefter udregnes ved hjælp af et givent punkt.</p>
+<p>\[ y-f(x_0) = f&#39;(x_0)(x-x_0) \]</p>
 <h1 id="funktioner"><a href="#TOC">Funktioner</a></h1>
 <h2 id="definitioner-m.v."><a href="#TOC">Definitioner m.v.</a></h2>
 <h3 id="lineære-funktioner"><a href="#TOC">Lineære funktioner</a></h3>
