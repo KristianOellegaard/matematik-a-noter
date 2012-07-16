@@ -42,6 +42,24 @@
 </ul></li>
 <li><a href="#sammensatte-funktioner">Sammensatte funktioner</a></li>
 </ul></li>
+<li><a href="#integralregning">Integralregning</a><ul>
+<li><a href="#stamfunktioner">Stamfunktioner</a><ul>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#brug-af-lommeregner">Brug af lommeregner</a></li>
+<li><a href="#ex2">e<sup>x</sup>2</a></li>
+<li><a href="#udregning-af-konstant">Udregning af konstant</a></li>
+<li><a href="#om-flere-stamfunktioner-til-en-given-funktion">Om flere stamfunktioner til en given funktion</a></li>
+<li><a href="#tiddistance-1">Tid/distance</a></li>
+<li><a href="#areal-af-f-stamfunktionen-til-f">Areal af f= stamfunktionen til f</a></li>
+<li><a href="#arealoversumundersum">Areal/Oversum/Undersum</a><ul>
+<li><a href="#oversum">Oversum</a></li>
+<li><a href="#undersum">Undersum</a></li>
+<li><a href="#middelsum">Middelsum</a></li>
+<li><a href="#areal">Areal</a></li>
+<li><a href="#bestemmelse-af-arealet-for-en-kegle">Bestemmelse af arealet for en kegle</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
 <li><a href="#tal">Tal</a></li>
 </ul>
 </div>
@@ -168,6 +186,115 @@
 <p>\[ f(x) = x^2 \] \[ g(x) = \sqrt x - 23 \]</p>
 <p>De kan herefter kombineres, f.eks.:</p>
 <p>\[ f(g(x)) = (\sqrt x - 23)^2 \] eller \[ g(f(x)) = \sqrt ( x^2 ) - 23 \]</p>
+<p>% Integralregning % Kristian Øllegaard % 12-07-2012</p>
+<h1 id="integralregning"><a href="#TOC">Integralregning</a></h1>
+<p>Består af stamfunktioner, summer og sandsynlighedsregning.</p>
+<h2 id="stamfunktioner"><a href="#TOC">Stamfunktioner</a></h2>
+<p>En stamfunktion er at gå baglæns ifht. differentiering.</p>
+<p>\[ f(x) = 2x \]</p>
+<p><strong>Stamfunktion til f = F</strong></p>
+<p>\[ F&#39;(x) = f(x) \]</p>
+<p>\[ F(x) = x^2 + k \]</p>
+<p>Idet man kan tilføje en hvilkensomhelst konstant til en given stamfunktion, er det ikke kun een stamfunktion, men uendeligt mange.</p>
+<p>\[ g(x) = x^3 \]</p>
+<p>\[ G(x) = {1 \over 4}x^4 + k \]</p>
+<table>
+<col width="25%" />
+<col width="44%" />
+<thead>
+<tr class="header">
+<th align="left">f(x)</th>
+<th align="left">F(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">\[x^7\]</td>
+<td align="left">\[1/8x^8 + k\]</td>
+</tr>
+<tr class="even">
+<td align="left">\[5x^{10}\]</td>
+<td align="left">\[{5 \over 11}x^{11} + k \]</td>
+</tr>
+<tr class="odd">
+<td align="left">\[3x^2+2x-8\]</td>
+<td align="left">\[ x^3 + x^2 -8x +k\]</td>
+</tr>
+<tr class="even">
+<td align="left">\[1/x\]</td>
+<td align="left">\[ lnx + k \]</td>
+</tr>
+<tr class="odd">
+<td align="left">\[e^x\]</td>
+<td align="left">\[ e^x + k \]</td>
+</tr>
+<tr class="even">
+<td align="left">\[e^(5x)\]</td>
+<td align="left">\[ {1 \over 5}e^{5x} + k \]</td>
+</tr>
+<tr class="odd">
+<td align="left">\[3^x\]</td>
+<td align="left">\[ {1 \over ln3} * 3^x + k \]</td>
+</tr>
+<tr class="even">
+<td align="left">\[-(1/x^2)\]</td>
+<td align="left">\[ {1 \over x} + k \]</td>
+</tr>
+</tbody>
+</table>
+<p>Eksempel: \[ f(x) = 2x \] \[ F(x)  = \int 2x \space dx = x^2 + k \]</p>
+<p>\[ (\int{f(x) \space dx})&#39; = f(x) \]</p>
+<p>\[ \int{f(x) + g(x)}dx = \int{f(x)dx} + \int{g(x)dx} \]</p>
+<p>\[ \int{k * g(x)}dx = k * \int{g(x)dx} \]</p>
+<h3 id="definition"><a href="#TOC">Definition</a></h3>
+<p>\[ \int x^a \space dx = {1 \over {a+1}}x^{a+1}+k \] eller \[ \int a^x dx = {1 \over lna}a^x+k = {a^x \over lna} +k \]</p>
+<h3 id="brug-af-lommeregner"><a href="#TOC">Brug af lommeregner</a></h3>
+<div class="figure">
+<img src="images/integral-ti-nspire.jpg" alt="Screenshot af integralregning på TI-nspire CAS" /><p class="caption">Screenshot af integralregning på TI-nspire CAS</p>
+</div>
+<h3 id="ex2"><a href="#TOC">e<sup>x</sup>2</a></h3>
+<p>Kan ikke udtrykkes, derfor skriver lommeregneren flg.: <img src="images/integral-ex-2.jpg" /></p>
+<h3 id="udregning-af-konstant"><a href="#TOC">Udregning af konstant</a></h3>
+<p>Ved et givet punkt (2,8) \[ f(x) = 2x \] \[ F(x) = x^2+k \] \[ 8 = 2^2 + k \] \[ k = 4 \] \[ F(x) = x^2+4 \]</p>
+<p>Husk at sørge for ‘k’ bliver husket i hvert led.</p>
+<h3 id="om-flere-stamfunktioner-til-en-given-funktion"><a href="#TOC">Om flere stamfunktioner til en given funktion</a></h3>
+<p>\[ f(x) \] \[ F(x)&#39; = f(x) \] \[ G(x)&#39; = f(x) \]</p>
+<p>\[ F(x)-G(x) = k \] \[ F(x) = G(x) + k \]</p>
+<p>Bevis:</p>
+<p>\[ ({F(x)-G(x)})&#39; = F&#39;(x) - G&#39;(x) = f(x)-f(x) = 0 \] Derfor \[ F(x) - G(x) = k \]</p>
+<h3 id="tiddistance-1"><a href="#TOC">Tid/distance</a></h3>
+<p>t = tid</p>
+<p>s = strækning</p>
+<p>v = hastighed</p>
+<p>a = acceleration</p>
+<p>\[ s&#39;(t) = v = 3 \] \[ f&#39;(x) = 3 \] \[ f(x) = 3x + k \] \[ s(t) = 3t + k \]</p>
+<p>\[ s(t) \] \[ s&#39;(t) = v(t) \] \[ v&#39;(t) = a(t) \]</p>
+<h3 id="areal-af-f-stamfunktionen-til-f"><a href="#TOC">Areal af f= stamfunktionen til f</a></h3>
+<p>\[ A(b) = F(b) - F(a) = \int^b_a f(x) dx = [F(x)]^b_a=F(b)-F(A) \]</p>
+<p>Eks. Areal af f(x) = x^2 i intervallet [0;1] \[ \int^1_0 x^2 \space dx = [{1 \over 3}x^3] = {1 \over 3}\*1^3-{1 \over 3}\*0^3={1 \over 3} \]</p>
+<p>Eks. på ti-nspire</p>
+<div class="figure">
+<img src="images/integral-udregn-nspire.jpg" alt="Ovenstående på TI-nspire CAS" /><p class="caption">Ovenstående på TI-nspire CAS</p>
+</div>
+<h3 id="arealoversumundersum"><a href="#TOC">Areal/Oversum/Undersum</a></h3>
+<h4 id="oversum"><a href="#TOC">Oversum</a></h4>
+<p>\[ O(x) = f(x_1) \Delta x + f(x_2) \Delta x … f(x_n) \Delta x  = \sum_{i=1}^5  \space f(x_i) \Delta x \]</p>
+<h4 id="undersum"><a href="#TOC">Undersum</a></h4>
+<p>\[ U(x) = \]</p>
+<h4 id="middelsum"><a href="#TOC">Middelsum</a></h4>
+<p>\[ M(x) = \]</p>
+<h4 id="areal"><a href="#TOC">Areal</a></h4>
+<p>\[ U(x) \leq A \leq O(x) \]</p>
+<p>\[ O-U \to_{\Delta x \to 0} 0 \]</p>
+<p>\[ areal = f(b)-f(a) \Delta x \]</p>
+<p>\[ \sum^\infty\_{i=1} f(t_i) \Delta x \to\_{x \to 0} \int^b\_a f(x) \space dx \]</p>
+<h4 id="bestemmelse-af-arealet-for-en-kegle"><a href="#TOC">Bestemmelse af arealet for en kegle</a></h4>
+<div class="figure">
+<img src="images/integral-kegle.jpg" /><p class="caption"></p>
+</div>
+<p>\[ a= \frac{\Delta x}{\Delta y} \]</p>
+<p>\[ y = \frac{r}{h}x \]</p>
+<p>\[ \int^h_0 \pi (\frac{r}{h}x)^2 dx = \pi \frac{r^2}{h^2} \int^h_0 x^2 dx = \left[\frac{1}{3}x^3\right]^h_0 * \pi \frac{r^2}{h^2} = \frac{1}{3} \pi \frac{r^2}{h^2} + 0 = \frac{1}{3}h \pi * r^2 \]</p>
 <h1 id="tal"><a href="#TOC">Tal</a></h1>
 <p>N = Naturlige tal {1, 2, 3, …}</p>
 <p>N0 = Naturlige tal, samt 0 {0, 1, 2, 3, …}</p>
